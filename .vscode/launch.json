@@ -1,7 +1,4 @@
 {
-  // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
-  // Pointez pour afficher la description des attributs existants.
-  // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
@@ -10,6 +7,14 @@
       "request": "attach",
       "program": "entrer le nom du programme, par exemple ${workspaceFolder}/a.out",
       "MIMode": "lldb"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/neph/www/42-init-c",
+      "program": "/Users/neph/www/42-init-c/build/Debug/outDebug"
     }
   ]
 }
