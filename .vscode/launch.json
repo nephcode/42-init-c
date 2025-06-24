@@ -1,20 +1,45 @@
 {
-  "version": "0.2.0",
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++: gcc build active file",
+      "command": "gcc",
+      "args": ["-g", "${file}", "-o", "${workspaceFolder}/program"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ],
   "configurations": [
     {
-      "name": "(lldb) Joindre",
+      "name": "(lldb) Lancer",
       "type": "cppdbg",
-      "request": "attach",
+      "request": "launch",
       "program": "entrer le nom du programme, par exemple ${workspaceFolder}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
       "MIMode": "lldb"
     },
     {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "name": "(lldb) Lancer",
+      "type": "cppdbg",
       "request": "launch",
+      "program": "entrer le nom du programme, par exemple ${workspaceFolder}/a.out",
       "args": [],
-      "cwd": "/Users/neph/www/42-init-c",
-      "program": "/Users/neph/www/42-init-c/build/Debug/outDebug"
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb"
     }
   ]
 }
