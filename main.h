@@ -1,4 +1,6 @@
-struct Coordonnees {
-    int x; 
+typedef struct Coordonnees Coordonnees;
+struct Coordonnees
+{
+    int x;
     int y;
 };
