@@ -12,4 +12,4 @@ int main(int argc, char *argv[])
     }
 
     return 0;
-}
+}//  use des var sur struct avec des deftype 
