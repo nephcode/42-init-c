@@ -10,5 +10,5 @@ int main(int argc, char *argv[])
     // Affichage de la chaîne grâce au %s du printf
     printf("%s\n", chaine);
 
-    return 0;
+    return 0;// arrete de dire que je code hein c'est pas facile.
 }
